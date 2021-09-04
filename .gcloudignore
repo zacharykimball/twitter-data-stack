@@ -1,0 +1,5 @@
+# Note this include is necessary to force GCP to send config.py to the server
+# Otherwise, because Google Cloud is using git under the hood, the .gitignore will dominate and (silently) exclude config.py
+#   from the upload to Google servers, even though config.py is not excluded by .dockerignore
+# See discussion at https://stackoverflow.com/questions/56751106/how-to-include-files-in-gcloudignore-that-are-ignored-in-gitignore
+!config.py

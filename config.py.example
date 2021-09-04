@@ -1,0 +1,31 @@
+# Google Cloud Project: Project ID as listed in the Google Developers Console (https://console.developers.google.com/project)
+gcp_project_id = [INSERT GOOGLE CLOUD PROJECT ID, SUCH AS TWITTER-DATA-PROJECT]
+gcp_project_number = [INSERT GOOGLE CLOUD PROJECT NUMBER, SUCH AS 12344567890]
+
+# Google Cloud Project: Service account email address in "APIs & auth->Credentials"  (https://console.developers.google.com/project/PROJECT_ID/apiui/credential) 
+gcp_service_account = [INSERT GOOGLE SERVICE ACCOUNT, SUCH AS twitter-project-service-account@twitter-data-project.iam.gserviceaccount.com]
+
+# Google Cloud Project: PKCS12 P12 key in "APIs & auth->Credentials" (https://console.developers.google.com/project/PROJECT_ID/apiui/credential)
+# Update to your own file name, if you do not use the default
+gcp_key_file = "key.json"
+
+# Google BigQuery: Existing dataset and table you want to stream data into (https://bigquery.cloud.google.com/project/PROJECT_ID)
+# Update to your own dataset and table names, if you do not use the defaults
+bq_dataset_id = "twitter"
+bq_table_id = "tweets"
+bq_table_activity_id = "activity"
+
+# Google BigQuery: Existing dataset and table you want to stream analyzed data from (https://bigquery.cloud.google.com/project/PROJECT_ID)
+# Update to your own dataset and table names, if you do not use the defaults
+bq_dataset_analysis_id = "twitter_analysis"
+bq_table_actions_id = "trigger_actions"
+
+# Twitter API: App keys and tokens (http://apps.twitter.com)
+twitter_consumer_key = [INSERT TWITTER CONSUMER KEY, SUCH AS abcde12345ABCDE]
+twitter_consumer_secret = [INSERT TWITTER CONSUMER SECRET, SUCH AS abcde12345ABCDEabcde12345ABCDEabcde12345ABCDE]
+twitter_access_token = [INSERT TWITTER ACCESS TOKEN, SUCH AS abcde12345ABCDEabcde12345ABCDEabcde12345ABCDE]
+twitter_access_token_secret = [INSERT TWITTER ACCESS TOKEN SECRET, SUCH AS abcde12345ABCDEabcde12345ABCDEabcde12345ABCDE]
+
+# Twitter: List ID to monitor for activity
+# Feel free to put in your own list or use the pre-existing "Data Twitter" list
+twitter_list_id = 1424592165498507269
