@@ -1,0 +1,6 @@
+config.py
+key.json
+__pycache__
+*.py[cod]
+*.p12
+*.pem
